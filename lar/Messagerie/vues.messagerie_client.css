@@ -1,0 +1,150 @@
+@charset "ISO-8859-1";
+.bloc_messagerie:nth-child(1) {
+
+	width: 20vh;
+	height:24vh;
+	margin-right: 5vh;
+	
+    
+	
+}
+body {
+	background-image: url("../Media/wallpaper_home.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+}
+.conteneur_messagerie {
+	display: flex;
+	
+}
+table
+{
+	background: white;
+    border-collapse: collapse;
+    width: 170vh;
+}
+td, th 
+{
+    border: 1px solid black;
+    height: 8vh;
+    text-align: center;
+}
+/*.content_mail p {
+    margin: auto;
+	width: 30vh;
+	height: 8vh;
+	
+}
+.content_mail a {
+	
+    color: black;
+    text-decoration: none;
+}
+.content_mail a:hover {
+	text-decoration: underline ;
+	color: red;
+}*/
+
+.fleche_suite_reception{
+	width: 3vh;
+	height: 3vh;
+}
+
+caption {
+	width: 170vh;
+	border: 1px solid black;
+	background-color: gray;
+}
+
+.menu_messagerie li a {
+  display: block ;
+  background: #3B4970;
+  color: #fff ;
+  font: 1em "Trebuchet MS",Arial,sans-serif ;
+  line-height: 1em ;
+  text-align: center ;
+  text-decoration: none ;
+  padding: 4px 0 ;
+  width: 20vh;
+  height: 5vh;
+  
+}
+.menu_messagerie li {
+  color: #fff ;
+  border: 1px solid #600 ;
+  margin-bottom: 2vh ;
+}
+.menu_messagerie li a:hover, .menu_messagerie li a:focus, .menu_messagerie li a:active {
+  background: #900 ;
+  text-decoration: underline ;
+}
+
+.bloc_messagerie:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border: 1px solid black;
+	overflow:auto;
+	height: 85vh;
+	width: 173vh;
+}
+
+.menu_messagerie{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu_messagerie:nth-child(1) {
+	position: absolute;
+	padding-left: 0vh;
+	bottom: 65vh;
+	
+}
+.menu_messagerie:nth-child(2) {
+	position: absolute;
+	bottom: 55vh;
+}
+.menu_messagerie:nth-child(3) {
+	position: absolute;
+	bottom: 35vh;
+}
+.menu_messagerie:nth-child(4) {
+	position: absolute;
+	bottom: 15vh;
+}
+.menu_title {
+	font-size: 2vh;
+	position: absolute;
+	left: 2vh;
+	bottom: 66vh;
+}
+/*.bloc_suite_mail p {
+    margin: auto;
+	width: 170vh;
+	height: 8vh;
+	
+}
+
+.bloc_suite_mail p:hover{
+	background: gray;
+}*/
+.bouton_voir_mail {
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_voir_mail:hover {
+	background: gray;
+}
+/*.bouton_next_mail {
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_next_mail:hover {
+	background: gray;
+}*/

@@ -184,7 +184,7 @@
 		 	<nav class="boutons">
 		 		<ul class="Accueil"><a href="../Mes_donnees/VueValeurCapteur">Accueil</a></ul>
 				<ul class="Profil"><a href="../Annexe/VueMonProfil.php">Mon profil</a></ul>
-			 	<ul class="Contact"><a href="#">Contact</a></ul>
+			 	<ul class="Contact"><a href="../Messagerie/vues.messagerie_client.php">Contact</a></ul>
 				<ul class="Apropos"><a href="../Annexe/aPropos.php">A propos</a></ul>
 				<ul class="Deconnexion"><a href="../Annexe/Controleur.php">Déconnexion</a></ul>
 			</nav>	
@@ -200,7 +200,7 @@
 		  <button class="dropdown-btn">Mes données<i class="fa fa-caret-down"></i> </button>
 		  	<div class="dropdown-container">
 			    <a class="lien_menu" href="../Mes_donnees/VueValeurCapteur">Valeurs capteurs</a>
-			    <a class="lien_menu" href="#">Etats actionneurs</a>
+			    <a class="lien_menu" href="../Mes_donnees/VueActionneur">Etats actionneurs</a>
 			</div>
 		  <button class="dropdown-btn">Mon logement<i class="fa fa-caret-down"></i> </button>
 		      <div class="dropdown-container">

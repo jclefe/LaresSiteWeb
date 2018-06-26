@@ -4,23 +4,25 @@
         <meta charset="utf-8" />
         <title>Valeurs capteurs</title>
         <link rel="stylesheet" href="../Style.css" />
+        <?php $sec = "6";header("Refresh: $sec");?>
     </head>
 
  	<body class="VueCapteur">
  	<?php include '../Annexe/menu.php';?> 
+ 	<?php require 'ModeleAccueil.php'?>
          <div class="conteneurCapteur">    
             
               <form>
                 <p class="titreCapteur">Veuillez choisir une pièce :
                 <select name="piece" id="piece">
-                     <option value="france">France</option>
+                  <!--    <option value="france">France</option>
                      <option value="espagne">Espagne</option>
                      <option value="italie">Italie</option>
                      <option value="royaume-uni">Royaume-Uni</option>
                      <option value="canada">Canada</option>
                      <option value="etats-unis">États-Unis</option>
                      <option value="chine">Chine</option>
-                     <option value="japon">Japon</option>
+                     <option value="japon">Japon</option> -->
                 </select>
                 </p> 
               </form>
@@ -34,7 +36,7 @@
                     <img src="../Media/drop.png">
                     <p>Taux d'humidité</p>                  
                   </div>
-                  <p class="test">23%</p><!--//////////////////////////////////////////////-->
+                  <p class="test"><?php echo analyseDonnees('luminosite')?></p><!--//////////////////////////////////////////////-->
                 </div>  
 
                <div class="trois"> 
@@ -42,7 +44,7 @@
                     <img src="../Media/light-bulb.png">
                     <p>Luminosité</p>                
                   </div>  
-                  <p class="test">54%</p><!--//////////////////////////////////////////////-->
+                  <p class="test"><?php echo analyseDonnees('luminosite')?></p><!--//////////////////////////////////////////////-->
                </div>   
 
               <div class="trois">  
@@ -50,7 +52,7 @@
                     <img src="../Media/thief.png">
                     <p>Présence ?</p>            
                   </div>  
-                  <p class="test">Oui</p><!--//////////////////////////////////////////////-->
+                  <p class="test"><?php echo analyseDonnees('presence')?></p><!--//////////////////////////////////////////////-->
               </div>    
             </div>
 
@@ -60,7 +62,7 @@
                     <img src="../Media/blinds.png">
                     <p>Volets ouverts?</p>              
                   </div>  
-                  <p class="test">Oui</p><!--//////////////////////////////////////////////-->
+                  <p class="test"><?php echo analyseDonnees('presence')?></p><!--//////////////////////////////////////////////-->
               </div>    
             
               <div class="trois"> 
@@ -76,7 +78,7 @@
                     <img src="../Media/flame.png">
                     <p>Fumée ?</p>                
                   </div>
-                  <p class="test">Non</p><!--//////////////////////////////////////////////-->
+                  <p class="test"><?php echo analyseDonnees('presence')?></p><!--//////////////////////////////////////////////-->
               </div>    
   </div>
         </div>

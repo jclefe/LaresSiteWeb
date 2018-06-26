@@ -17,6 +17,7 @@
         <button class="boutonConnexion" type="submit" name="connexion" value="Se connecter"/>Valider</button>
       </div>
       <a href="../Inscription/VueInscription.php">Pas encore inscrit ? S'inscrire ici</a>
+      </form>      
   </div>
 </body>   
 

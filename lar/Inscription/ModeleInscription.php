@@ -19,7 +19,7 @@ function add_user($nom, $prenom, $identifiant, $mdp, $genre, $adresse, $ville, $
         'name' => $nom,
         'prenom' => $prenom,
         'id' => $identifiant,
-        'mdp' => $mdp,
+        'mdp' => md5($mdp),
         'genre' => $genre
     ));
     

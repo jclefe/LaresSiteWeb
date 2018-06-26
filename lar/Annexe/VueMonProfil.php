@@ -9,36 +9,37 @@
 <div class="global">
 		<h1>Remplissez les champs que vous souhaitez modifier </h1>    
 		<?php $nom=getNamebyLogin($_SESSION['login'])['name'];$prenom=getNamebyLogin($_SESSION['login'])['firstname']; ?>
-        <form method="POST" action="ControleurInscription.php"> <!--  /////////////////////////////////////////// -->
+        <form method="post" action="ControleurMonProfil.php"> 
                 <h2>Informations générales</h2>            
                 <div class="conteneur">
-                  <?php  echo '<input class="inputclassique" type="text" placeholder='.$nom.' name="nom" id="nom"/> '?>
-                  <?php  echo '<input class="inputclassique" type="text" placeholder='.$prenom.' name="prenom" id="prenom"/>'?>
-                  <?php  echo '<input class="inputclassique" id="e-mail" type="text" placeholder='.$_SESSION['login'].' name="mail" id="mail"/>'?>                
+                  <?php  echo "<input class='inputclassique' type='text' placeholder='".$nom."' name='nom' id='nom'/> "?>
+                  <!-- <input class="inputclassique" type="text" placeholder=<?php /*echo $nom */ ?> name="nom" id="nom"/> -->
+                  <?php  echo "<input class='inputclassique' type='text' placeholder='".$prenom."' name='prenom' id='prenom'/>"?>
+                  <?php  echo "<input class='inputclassique' id='e-mail' type='text' placeholder='".$_SESSION['login']."' name='mail' id='mail'/>"?>                
                     <input type="password" class="inputclassique" placeholder="Ancien mot de passe" name="password"/>
-                    <input type="password" class="inputclassique" placeholder="Nouveau mot de passe (8 caract min)" name="password" id="password"/>
+                    <input type="password" class="inputclassique" placeholder="Nouveau mot de passe (8 caract min)" name="Newpassword" id="password"/>
                     <input type="password" class="inputclassique" placeholder="Confirmer le mot de passe" name="passwordcheck" id="passwordcheck"/>          	
                 </div>        	
                 <h2>Adresse</h2>            
                 <div class="conteneur">
-                    <?php echo '<input type="text" class="inputclassique" placeholder='.getAddressbyLogin($_SESSION['login'])['address'] .'name="numbernameadress" id="numbernameadress" />'?>
-                    <?php echo '<input type="text" class="inputclassique" placeholder='.getAddressbyLogin($_SESSION['login'])['zip'] .' name="postalcode" id="postalcode" />'?>
-                    <?php echo '<input type="text" class="inputclassique" placeholder='.getAddressbyLogin($_SESSION['login'])['town'] . 'name="city" id="city"/>' ?>
+                    <?php echo "<input type='text' class='inputclassique' placeholder='".getAddressbyLogin($_SESSION['login'])['address'] ."'name='numbernameadress' id='numbernameadress' />"?>
+                    <?php echo "<input type='text' class='inputclassique' placeholder='".getAddressbyLogin($_SESSION['login'])['zip'] ."' name='postalcode' id='postalcode' />"?>
+                    <?php echo "<input type='text' class='inputclassique' placeholder='".getAddressbyLogin($_SESSION['login'])['town']."'name='city' id='city'/>" ?>
                     <?php echo '<input type="text" class="inputclassique" placeholder='. getSuperficieFromLogin($_SESSION['login']) .'m²'.' name="taille" id="taille"/>' ?>   
                 </div>  
                 <h2>Ajouter un utilisateur au logement</h2>
                 <h3 style="text-align:center; font-family:Trebuchet MS;font-size:1em; font-weight:normal">Veuillez remplir tous les champs de cette section si vous souhaitez ajouter un utilisateur</h3>
                 <div class="conteneur">
-                    <input class="inputclassique" type="text" placeholder="Nom" name="nom" id="nom"/>
-                	<input class="inputclassique" type="text" placeholder="Prénom" name="prenom" id="prenom"/>
-                	<input class="inputclassique" id="e-mail" type="text" placeholder="E-mail" name="mail" id="mail"/>                
+                    <input class="inputclassique" type="text" placeholder="Nom" name="nom2" id="nom"/>
+                	<input class="inputclassique" type="text" placeholder="Prénom" name="prenom2" id="prenom"/>
+                	<input class="inputclassique" id="e-mail" type="text" placeholder="E-mail" name="mail2" id="mail"/>                
                     <div id="genre">
                         <label class="textinput">Genre</label>
                         <input type="radio" name="gender" id="gender1" value="M" checked><label for="gender1" class="textinput">Homme</label> 
                         <input type="radio" name="gender" id="gender2" value="F"><label for="gender2"class="textinput">Femme</label>
                     </div>
-                    <input type="password" class="inputclassique" placeholder="Mot de passe (8 caract min)" name="password" id="password"/>
-                    <input type="password" class="inputclassique" placeholder="Confirmer le mot de passe" name="passwordcheck" id="passwordcheck"/>
+                    <input type="password" class="inputclassique" placeholder="Mot de passe (8 caract min)" name="password2" id="password"/>
+                    <input type="password" class="inputclassique" placeholder="Confirmer le mot de passe" name="passwordcheck2" id="passwordcheck"/>
                     <div id="genre">
                         <label class="textinput">Enfant?</label>
                         <input type="radio" name="restrict" id="restrict1" value="0" checked><label for="restrict1" class="textinput">Oui</label> 

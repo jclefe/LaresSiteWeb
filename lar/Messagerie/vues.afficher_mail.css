@@ -1,0 +1,78 @@
+@charset "ISO-8859-1";
+body {
+	background-image: url("../Media/wallpaper_home.jpg");
+    background-attachment: fixed; 
+    background-repeat: no-repeat; 
+}
+.objet {
+	border: 1px solid black;
+	width: 50vh;
+	padding: 1vh;
+	text-align: left;
+	margin-left: 22vh;
+	background:white;
+	
+}
+.expediteur {
+	border: 1px solid black;
+	width: 50vh;
+	padding: 1vh;
+	text-align: left;
+	margin-left: 2.5vh;
+	background:white;
+}
+
+.date {
+	text-align: center;
+	margin-right: 23vh;
+	border: 1px solid black;
+	width: 20vh;
+	padding: 1vh;
+	background:white;
+}
+
+.contenu {
+	border: 1px solid black;
+	width: 160vh;
+	height: 80vh;
+	margin-left: 22vh;
+	margin-top: 0.5vh;
+	background:white;
+    padding-top: 2vh;
+    padding-left: 1.5vh;
+}
+.afficher_mail {
+	display: flex;
+	flex-direction: column;
+}
+.en_tête , .bas {
+	display: flex;
+}
+.en_tête{
+	justify-content:space-between;
+	margin-bottom: 0.5vh;
+}
+.bouton_return {
+	margin-right: 10vh;
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_return:hover {
+	background: gray;
+	border: 1px solid gray;
+}
+.bouton_response {
+	margin-right: 10vh;
+	color: #3B4970;
+	border-radius: 10px;
+	padding: 0.5vh;
+	background:#ccc;
+	width: 25vh;
+}
+.bouton_response:hover {
+	background: gray;
+	border: 1px solid gray;
+}

@@ -1,4 +1,5 @@
 <?php
+require "RecupDonneesCapteur.php";
 function dbConnect()
 {
     try
@@ -17,7 +18,7 @@ function checkLogin($id,$mdp)
     $db=dbConnect();
     $req1 = $db->prepare('SELECT Nom, Prenom FROM personne WHERE Identifiant = :id AND Mot_de_passe=:mdp');
     $req1->execute(array('id'=> $id,
-        'mdp'=>$mdp));
+        'mdp'=>md5($mdp)));
     
     $donnees = $req1->fetch();
     $name['nom'] = $donnees['Nom'];
@@ -55,4 +56,24 @@ function liste_piece($log)
     $req3->closeCursor();
     return $ensemble_piece;
 }
+
+function analyseDonnees($name){
+    $db=dbConnect();
+    $req1 = $db->prepare('SELECT Valeur FROM donnees WHERE Type_capteur = :nm ORDER BY Date DESC, Heure DESC');
+    $req1->execute(array('nm'=> $name));
+    $i=0;
+    while($donnees = $req1->fetch())
+    {
+        $data[$i]=$donnees['Valeur'];
+        $i++;
+    }
+    $req1->closeCursor();
+    return $data[0];
+}
+
+
+
+
+
+
 ?>
