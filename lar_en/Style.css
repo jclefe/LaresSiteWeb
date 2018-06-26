@@ -1,0 +1,313 @@
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+/* CSS de Vue Info Logement */
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+
+    @import url('https://fonts.googleapis.com/css?family=Tajawal');
+.bodyLogement
+{
+	background-repeat: no-repeat;
+	background-size: 220vh 100vh;
+	background-image: url("Media/background2.jpg");
+	font-family: Trebuchet MS;
+}
+
+.fenetr
+{
+	position: absolute;
+	left: 60vh;
+	top: 20vh;
+	background-color: rgba(255,255,255,0.9);
+	height: 60vh;
+	width: 100vh;
+}
+
+.titre
+{
+	text-align: center;
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1.5em;
+}
+
+.tdLogement
+{
+	text-align: center;
+	padding: 3vh;
+}
+.tableLogement
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5vh;
+	padding: 3vh;
+}
+
+.boutons2
+{
+	padding:6px 6px 6px 6px;
+	font:bold 13px Arial;
+	width: 100%;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#pays
+{
+
+	height: 5.5vh;
+	width: 28vh;
+	border-radius:10px;
+	padding-left: 2vh;
+	font-family: Trebuchet MS;
+}
+    
+
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+/* CSS de VueCapteur1 */
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+.VueCapteur1
+{
+	background-color: red;
+	width: 80vh;
+	height:50vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25vh;
+	background-color: rgba(255,255,255,0.9);
+}
+
+h2
+{
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 4vh;
+}
+
+#payss
+{
+	margin-left: 28vh;
+	margin-top: 7vh;
+
+	height: 5.5vh;
+	width: 25vh;
+	border-radius:10px;
+	padding-left: 2vh;
+	font-family: Trebuchet MS;
+}
+
+.ajouter
+{
+	margin-left: 15vh;
+}
+
+.supprimer
+{
+	margin-left: 10vh;
+}
+
+.ajouter, .supprimer
+{
+	padding: 5px 0 5px 0;
+	font:bold 13px Arial;
+	width: 20vh;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+	margin-top: 9vh;
+}
+
+.bodyVueCapteur1
+{
+	font-family: Trebuchet MS;
+	background-image: url("Media/background3.jpg");
+	background-size: 220vh 150vh;
+}
+
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+/* CSS de VueCapteur */
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+
+.conteneurCapteur
+{
+	display: flex;
+	flex-direction: column;
+	height: 60vh;
+	width: 110vh;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgba(255,255,255,0.9);
+	margin-left: 30%;
+	margin-top: 25vh;
+}
+
+.bout
+{
+	margin-top: 4vh;
+	margin-bottom: 4vh;
+	margin-left: auto;
+	margin-right: auto;
+	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	width:100px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+}
+
+.VueCapteur
+{
+	font-family: Trebuchet MS;
+	background-image: url("Media/background3.jpg");
+	background-size: 220vh 150vh;
+}
+
+.titreCapteur
+{
+	font-size: 1em;
+	font-weight: normal;
+	//text-align: center;
+	margin-top: 3vh;
+}
+
+
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+/* CSS de Connexion */
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+.bodyConnexion {
+	background-image:url("Media/login.jpg");
+	background-size: 240vh 120vh;
+	background-repeat: no-repeat;
+}
+
+.corpsConnexion
+{
+	height: 97vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.inputConnexion 
+{
+	width: 45vh;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 20px;
+	text-size: 22px;
+	margin-bottom: 5vh;
+}
+
+.boutonConnexion 
+{
+	border-radius: 10px;
+	border: none;
+	color: black;
+	padding: 12px 26px;
+	text-decoration: none;
+	cursor: pointer;	
+}
+
+.imageConnexion
+{
+	height: 40vh;
+	width: 38vh;
+}
+
+.corps2Connexion
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 35vh;
+}
+
+.titreConnexion
+{
+	text-align: center;
+	font-family: 'Tajawal', sans-serif;
+	font-weight: normal;
+	font-size: 1.6em;
+}
+
+
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+/* CSS de VueModifierPiece */
+/*//////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+
+.fenetre
+{
+	background-color: white;
+	opacity: 0.9;
+	width: 90vh;
+	height: 60vh;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30vh; 
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.titreVuePiece
+{
+	font-family: 'Tajawal', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.bouton
+{
+	padding: 5px 0 5px 0;
+	font:bold 13px Arial;
+	width: 12vh;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+	cursor: pointer;
+	margin-left: 4vh;
+}
+
+#nom_de_piece, #pays, #superficie
+{
+	height: 5.5vh;
+	width: 40vh;
+	border-radius:10px;
+	padding-left: 2vh;
+	font-family: Trebuchet MS;
+}
+#superficie
+{
+	margin-top: 3vh;
+}
+
+.bodyVuePiece
+{
+	background-image: url("Media/background4.jpg");
+	background-size: 220vh 150vh;
+}
