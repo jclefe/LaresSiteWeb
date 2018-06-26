@@ -20,8 +20,8 @@
                             } ?>           
          		</select>
 	 		<div>
-	 			 <input class="ajouter" name="ajouter" type="submit" value="Ajouter capteur" />
-	 			 <input class="supprimer" name="supprimer" type="submit" value="Supprimer capteur" />
+	 			 <input class="ajouter" name="ajouter" type="submit" value="Add sensor" />
+	 			 <input class="supprimer" name="supprimer" type="submit" value="Delete sensor" />
 	 		</div>
 	 	</form>		
  		</div>

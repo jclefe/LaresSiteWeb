@@ -13,9 +13,9 @@
     	<div class="elementVuePiece">
         <form method="post" action="ControleurModifierPiece.php"> 
       			<h2 class="titreVuePiece">Add another room :</h2>
-        		  <input type="text" name="nom_de_piece" id="nom_de_piece" placeholder="Saisir le nom de la pièce" />
-        		  <input class="bouton" type="submit" value="Valider" /> <br/>
-        		  <input type="text" name="superficie" id="superficie" placeholder="Superficie" />	            
+        		  <input type="text" name="nom_de_piece" id="nom_de_piece" placeholder="Please enter the room's name" />
+        		  <input class="bouton" type="submit" value="Submit" /> <br/>
+        		  <input type="text" name="superficie" id="superficie" placeholder="Area" />	            
       	</form>
        </div>   
       <div class="elementVuePiece">
@@ -27,7 +27,7 @@
                                 echo "<option value=". $_SESSION['ens_pieces'][$i].">". $_SESSION['ens_pieces'][$i] . "</option>";
                             } ?>          
             	</select>
-      		  <input class="bouton" name="supprimer" type="submit" value="Supprimer" /> 
+      		  <input class="bouton" name="supprimer" type="submit" value="Delete" /> 
       	</form>
       </div>
     </div>  
