@@ -13,7 +13,7 @@
  	$ens_capteur=ensembleCapteurbyPiece(getIdPieceFromName($_SESSION['pieceC'],  $_SESSION['login']));?>
       
          <div class="conteneurCapteur">
-         <h1 class="titreCapteur">Choisissez les capteurs souhaités pour <?php echo $_SESSION['pieceC']?> :</h1>
+         <h1 class="titreCapteur">Choose the desired sensors for <?php echo $_SESSION['pieceC']?> :</h1>
          <form method="post" action="ControleurSupprimerCapteur.php"> <!-- ////////////////////////// -->               
         		<table>
                 	<tr> <?php       
